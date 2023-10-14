@@ -40,7 +40,7 @@ public class Main {
                         }
                         fileWriter.write(String.format("%s %s %s %s %s %s", lastName, middleName, firstName, birthDate, phoneNumber, gender));
                     }catch (IOException e){
-                        throw new FileSystemException("Возникла ошибка при работе с файлом");
+                        throw new FileSystemException("Error with file!");
                     }
                 } catch (UserDataFormatException e) {
                     System.out.println("Error: " + e.getMessage());
